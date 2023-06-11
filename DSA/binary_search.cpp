@@ -4,7 +4,7 @@ typedef long long ll;
 typedef long double ld;
 
 void solve(){
-  cout<<"PRONOU";
+  
 }
 
 int main(){
