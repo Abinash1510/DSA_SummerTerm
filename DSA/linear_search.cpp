@@ -1,3 +1,4 @@
+/*
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -29,6 +30,44 @@ void solve(){
     else{
         cout<<"found at index : " << wawu<<endl;
     }
+}
+
+int main(){
+   system("cls");
+   
+   solve();
+   
+   return 0;
+}
+*/
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+typedef long double ld;
+
+bool linearsearch(vector<int> v, int key){
+    for(int i=0; i<v.size(); i++){
+        if(v[i]==key){
+            return true;
+        }
+    }
+    return false;
+}
+
+void solve(){
+  int n; cin>>n;
+  vector<int>v(n);
+  for(auto &i:v) cin>>i;
+  cout<<endl;
+  int key; cin>>key;
+
+  bool linearsearchresult = linearsearch(v,key);
+  if(linearsearchresult) cout<< "found";
+  else cout<<"not found"<<endl; 
+
 }
 
 int main(){
