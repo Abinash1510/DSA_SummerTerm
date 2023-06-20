@@ -82,26 +82,6 @@ typedef long double ld;
 // }
 
 //Create a function to find if the number entered by the user is even or odd
-
-
-// void checkEvenOdd(int num) {
-//   if (num % 2 == 0) {
-//     cout << num << " is even." << endl;
-//   } else {
-//     cout << num << " is odd." << endl;
-//   }
-// }
-
-// int main() {
-//   int num;
-//   cout << "Enter a number: ";
-//   cin >> num;
-
-//   checkEvenOdd(num);
-
-//   return 0;
-// }
-
 void checkEvenOdd(int num){
     string result = (num%2 == 0) ? "The number is EVEN": "The number is ODD";
     cout<<result<<endl;
